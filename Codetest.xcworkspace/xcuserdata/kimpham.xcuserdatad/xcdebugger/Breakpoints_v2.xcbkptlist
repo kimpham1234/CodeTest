@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Codetest/ViewController.swift"
+            timestampString = "528510601.747049"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "getInfoButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Codetest.ViewController.(getInfoButton (__ObjC.UIButton) -&gt; ()).(closure #1)"
+                  moduleName = "Codetest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimpham/Documents/ProjectsApps/ios/CodeTest/Codetest/Codetest/ViewController.swift"
+                  timestampString = "528509368.262272"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Codetest.ViewController.(getInfoButton (__ObjC.UIButton) -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "Codetest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimpham/Documents/ProjectsApps/ios/CodeTest/Codetest/Codetest/ViewController.swift"
+                  timestampString = "528509368.266815"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "402">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Codetest/ViewController.swift"
+            timestampString = "528510601.747049"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Codetest.ViewController.usernameTextField.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "Codetest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimpham/Documents/ProjectsApps/ios/CodeTest/Codetest/Codetest/ViewController.swift"
+                  timestampString = "528510518.853668"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Codetest.ViewController.usernameTextField.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "Codetest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimpham/Documents/ProjectsApps/ios/CodeTest/Codetest/Codetest/ViewController.swift"
+                  timestampString = "528510518.858029"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Codetest.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Codetest.ViewController"
+                  moduleName = "Codetest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimpham/Documents/ProjectsApps/ios/CodeTest/Codetest/Codetest/ViewController.swift"
+                  timestampString = "528510518.861641"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "178">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Codetest.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Codetest.ViewController&gt;"
+                  moduleName = "Codetest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimpham/Documents/ProjectsApps/ios/CodeTest/Codetest/Codetest/ViewController.swift"
+                  timestampString = "528510518.86421"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "113">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
