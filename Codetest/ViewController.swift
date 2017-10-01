@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
     @IBOutlet weak var repotable: UITableView!
     var username = ""
     var reponames = [String]()
+    var repoName = ""
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var table: UITableView!
@@ -49,6 +50,20 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
         cell.textLabel?.text = reponames[indexPath.row]
         return cell
+    }
+    
+    internal func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        repoName = reponames[indexPath.row]
+        performSegue(withIdentifier: "toDetail", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetail"{
+            let detailViewController = segue.destination as! RepoDetailViewController
+            detailViewController.repoName = repoName
+            detailViewController.owner = username
+           
+        }
     }
     
     override func viewDidLoad() {

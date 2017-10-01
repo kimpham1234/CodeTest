@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02B671B6D4A415FDC69480BE /* Pods_Codetest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398A09605FAA852AFA6662B6 /* Pods_Codetest.framework */; };
+		CF42C1D81F80C8630022A398 /* RepoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42C1D71F80C8630022A398 /* RepoDetailViewController.swift */; };
 		CF5A497B1F805797008A2897 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5A497A1F805797008A2897 /* AppDelegate.swift */; };
 		CF5A497D1F805797008A2897 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5A497C1F805797008A2897 /* ViewController.swift */; };
 		CF5A49801F805797008A2897 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5A497E1F805797008A2897 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		00CFC07E026FCE5CB600F779 /* Pods-Codetest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codetest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Codetest/Pods-Codetest.release.xcconfig"; sourceTree = "<group>"; };
 		398A09605FAA852AFA6662B6 /* Pods_Codetest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Codetest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF42C1D71F80C8630022A398 /* RepoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailViewController.swift; sourceTree = "<group>"; };
 		CF5A49771F805797008A2897 /* Codetest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codetest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5A497A1F805797008A2897 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF5A497C1F805797008A2897 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				CF5A49811F805797008A2897 /* Assets.xcassets */,
 				CF5A49831F805797008A2897 /* LaunchScreen.storyboard */,
 				CF5A49861F805797008A2897 /* Info.plist */,
+				CF42C1D71F80C8630022A398 /* RepoDetailViewController.swift */,
 			);
 			path = Codetest;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			files = (
 				CF5A497D1F805797008A2897 /* ViewController.swift in Sources */,
 				CF5A497B1F805797008A2897 /* AppDelegate.swift in Sources */,
+				CF42C1D81F80C8630022A398 /* RepoDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +497,7 @@
 				CF5A49961F805797008A2897 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF5A49971F805797008A2897 /* Build configuration list for PBXNativeTarget "CodetestTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +506,7 @@
 				CF5A49991F805797008A2897 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
