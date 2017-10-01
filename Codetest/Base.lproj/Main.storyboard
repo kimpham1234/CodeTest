@@ -85,7 +85,7 @@
         <!--Repo Detail View Controller-->
         <scene sceneID="u93-zz-RzC">
             <objects>
-                <viewController id="Vsy-vS-kV7" customClass="RepoDetailViewController" customModule="Codetest" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Vsy-vS-kV7" customClass="RepoDetailViewController" customModule="Codetest" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6L0-UV-1ly"/>
                         <viewControllerLayoutGuide type="bottom" id="kH2-Y0-1Zp"/>
@@ -93,12 +93,145 @@
                     <view key="view" contentMode="scaleToFill" id="hgQ-Vc-z4G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VNI-1p-5GQ">
+                                <rect key="frame" x="-60" y="59" width="400" height="550"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZf-W1-TYR">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmD-wU-y7B">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="6aU-Xh-HoX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qvZ-A6-MG1">
+                                                <rect key="frame" x="100" y="0.0" width="300" height="100"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Fullname">
+                                                        <attributes>
+                                                            <color key="NSColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efo-Go-PlG">
+                                        <rect key="frame" x="0.0" y="100" width="400" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setting:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xae-fy-YwT">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="kRD-bK-Jus"/>
+                                                    <constraint firstAttribute="height" constant="50" id="xv1-tH-4a0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l6f-mk-rQm">
+                                                <rect key="frame" x="100" y="0.0" width="300" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Setting">
+                                                        <attributes>
+                                                            <color key="NSColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxy-oc-223">
+                                        <rect key="frame" x="0.0" y="150" width="400" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwm-QM-Zyj">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="p2P-hk-cFc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="taG-UX-4AA">
+                                                <rect key="frame" x="100" y="0.0" width="300" height="200"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Description">
+                                                        <attributes>
+                                                            <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4KO-QE-aD8">
+                                        <rect key="frame" x="0.0" y="350" width="400" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Url:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K61-KM-pWF">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="uFh-mg-npB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Url" translatesAutoresizingMaskIntoConstraints="NO" id="rIL-YN-kDl">
+                                                <rect key="frame" x="100" y="0.0" width="300" height="200"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="fsy-1B-IAI"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZt-9A-XwF">
+                                <rect key="frame" x="149" y="28" width="77" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="VNI-1p-5GQ" secondAttribute="trailing" constant="19" id="AF9-jz-fxV"/>
+                            <constraint firstItem="VNI-1p-5GQ" firstAttribute="centerY" secondItem="hgQ-Vc-z4G" secondAttribute="centerY" id="N76-XJ-HhK"/>
+                            <constraint firstItem="VNI-1p-5GQ" firstAttribute="centerX" secondItem="hgQ-Vc-z4G" secondAttribute="centerX" id="iEj-1m-C8L"/>
+                            <constraint firstItem="eZt-9A-XwF" firstAttribute="top" secondItem="6L0-UV-1ly" secondAttribute="bottom" constant="8" id="uUq-cE-XPS"/>
+                            <constraint firstItem="eZt-9A-XwF" firstAttribute="centerX" secondItem="hgQ-Vc-z4G" secondAttribute="centerX" id="vfl-tf-ebg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="repoDescription" destination="taG-UX-4AA" id="FXN-3x-h3y"/>
+                        <outlet property="repoFullName" destination="qvZ-A6-MG1" id="ERJ-ln-Y7i"/>
+                        <outlet property="repoSetting" destination="l6f-mk-rQm" id="xAC-S8-fqm"/>
+                        <outlet property="repoUrl" destination="rIL-YN-kDl" id="Keh-mi-onh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9zq-eN-NM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="908" y="54"/>
+            <point key="canvasLocation" x="908" y="53.523238380809602"/>
         </scene>
     </scenes>
 </document>

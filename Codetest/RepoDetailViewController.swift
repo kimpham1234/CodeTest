@@ -14,14 +14,36 @@ class RepoDetailViewController: UIViewController {
     var repoName = ""
     var owner = ""
     
+    @IBOutlet weak var repoFullName: UITextView!
+    
+    @IBOutlet weak var repoSetting: UITextView!
+    
+    @IBOutlet weak var repoDescription: UITextView!
+    
+    @IBOutlet weak var repoUrl: UITextView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         
         Octokit().repository(owner: owner, name: repoName){ response in
             switch response{
                 case .success(let reposistory):
-                    print(reposistory.gitURL)
+                    print(reposistory.fullName)
+                    DispatchQueue.main.async {
+                        self.repoFullName.text = reposistory.fullName!
+                        
+                        if reposistory.isPrivate {
+                           self.repoSetting.text = "Private"
+                        }else {
+                           self.repoSetting.text = "Public"
+                        }
+                        self.repoDescription.text = reposistory.repositoryDescription
+                        
+                        self.repoUrl.text = reposistory.gitURL
+                    }
+                
                 case .failure(let error):
                     print(error)
             }
